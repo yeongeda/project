@@ -32,7 +32,7 @@
             </div>
         </nav>
     </header>
-
+<!------------ 로그인화면 ------------->
     <form name="frm" method="post" action="">
         <h1>로그인</h1>
         <ul>
@@ -51,15 +51,18 @@
             
             <div class="naver">
                 <a href="#">네이버로 시작하기</a>
-                <img src="./images/naver_icon.png" class="n-icon"  alt="">
+                <img src="./images/naver_logo.svg" alt="">
+<!--                 <img src="./images/naver_icon.png" class="n-icon"  alt=""> -->
             </div>
             <div class="kakao">
                 <a href="#">카카오로 시작하기</a>
-                <img src="./images/kakao_icon.png" class="k-icon" alt="">
+                <img src="./images/kakao_logo.svg" alt="">
+<!--                 <img src="./images/kakao_icon.png" class="k-icon" alt=""> -->
             </div>
             <div class="google">
                 <a href="#">Google로 시작하기</a>
-                <img src="./images/g_icon.png" class="g-icon" alt="">
+                <img src="https://www.svgrepo.com/show/475656/google-color.svg" >
+<!--                 <img src="./images/g_icon.png" class="g-icon" alt=""> -->
             </div>
         </section>
         <section class="find-signup-wrap">
@@ -77,6 +80,27 @@
         </section>
 
     </form>
+    <script>
+        let email = document.querySelector(".email");
+        let passwd = document.querySelector(".passwd");
+        let btn = document.querySelector(".btn");
+
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            if(email.value == '') {
+                alert("아이디를 입력하세요.")
+                email.focus();
+                return false;
+            }
+
+            if(passwd.value == '') {
+                alert("비밀번호를 입력하세요.")
+                passwd.focus();
+                return false;
+            }
+        });
+    </script>
     
 </body>
 </html>
