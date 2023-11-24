@@ -224,7 +224,7 @@ section p {
     padding-left: 20px;
 }
 
-.n-icon {
+/* .n-icon {
     position: absolute;
     left: 75px; 
     right: 100px;
@@ -233,6 +233,13 @@ section p {
     cursor: pointer;
 }
 
+.naver img {
+    position: absolute;
+    width: 43px;
+    transform: translateY(-76%);
+    left: 56px;
+}
+ */
 /* 카카오 */
 .kakao {
     background-color: #FEE500;
@@ -249,13 +256,20 @@ section p {
     padding-left: 20px;
 }
 
-.k-icon {
+/* .k-icon {
     position: absolute;
     left: 72px;
     right: 100px;
     top: 54%;
     transform: translateY(-50%);
     cursor: pointer;
+} */
+
+.kakao img{
+    position: absolute;
+    width: 22px;
+    transform: translateY(-98%);
+    left: 67px;
 }
 
 /* 구글 */
@@ -279,23 +293,28 @@ section p {
     position: relative;
 }
 
-.g-icon {
+/* .g-icon {
     position: absolute;
     left: 57px;
     right: 100px;
     top: 54%;
     transform: translateY(-50%);
     cursor: pointer;
-}
+} */
 
+.google img {
+    width: 22px;
+    position: absolute;
+    transform: translateX(-330%);
+}
 /*---------아이디, 비번 찾기 / 회원가입 -----------*/
 
 /*찾기 및 회원가입*/
 .find-signup-wrap{
     height: 100px;
-    padding-top: 15px;
+    padding-top: 8px;
     text-align: center;
-    padding-right: 13px;
+    padding-right: 15px;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
