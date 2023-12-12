@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+/* 메뉴 및 메인폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+/* 임시로고 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* 카테고리 아이콘폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+/* 구글 로그인 버튼 폰트*/
+
+:root {
+    --main-color: rgb(245, 188, 0);
+    --sub-color: #6D955B;
+    --main-width: 1200px;
+    --font-black-color: rgb(61, 61, 61);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-top: 80px;
+    /* 상단 네비메뉴의 높이와 같음 */
+}
+
+/* --------------- nav메뉴 스타일 ---------------- */
+header {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: white;
+    box-shadow: 0 0 2px rgb(175, 175, 175);
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    max-width: var(--main-width);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.logo p {
+    color: var(--main-color);
+    padding: 2px;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    font-family: 'Bebas Neue', sans-serif;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 21px;
+    margin-top: -5px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu li a {
+    padding: 10px;
+    margin: 8px;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(71, 71, 71);
+    cursor: pointer;
+    text-decoration: none;
+}
+.search{
+    width: 260px;
+    height: 36px;
+    /* background-color: rgb(241, 241, 241); */
+    border: 1px solid rgb(201, 201, 201);
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+.search p{
+    width: 12%;
+    text-align: center;
+    color:rgb(156, 156, 156);
+}
+.search input{
+    width: 88%;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+}
+.sign {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.sign a{
+    padding: 5px 8px;
+    font-size: 16px;
+    text-decoration: none;
+    color: grey;
+}
+
+/* ------------------------------------------------- */
+
+/*회원가입*/
+body {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 800px;
+    min-width: 450px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #f8f8f8;
+    border: 0.25rem;
+    box-sizing: border-box;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 300px;
+}
+
+.content {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box {
+    width: 100%;
+    height: 43px;
+    padding: 5px 0 5px 15px;
+    border-radius: 0.25rem;
+    border: 1px solid #d9d6d6;
+    color: #383838;
+    font-weight: 400;
+}
+
+section {
+    margin: 30px 0 5px 0;
+}
+
+/* reference */
+.reference {
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: 'Noto Sans KR', sans-serif;
+
+}
+
+/* SECTION - EMAIL */
+.info #member_email {
+    display: flex;
+    align-items: center;
+    /*margin-bottom: 7px;*/
+}
+
+.info #member_email input {
+    width: 90%;
+}
+
+.info #member_email span {
+    font-size: 14px;
+    margin: 0 3px;
+}
+
+.info .box #domain-list option {
+    font-size: 14px;
+    background-color: #fff;
+}
+
+
+
+/* member_nickname */
+.member_nick {
+    display: flex;
+}
+
+button#nameChk {
+    width: 150px;
+    height: 43px;
+    margin-left: 10px;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button#nameChk:active {
+    background-color: #fff;
+    color: black;
+}
+
+
+/* Birth */
+.info #member_birth {
+    display: flex;
+}
+
+.info #member_birth select {
+    margin-left: 7px;
+    color: #a0a0a0;
+}
+
+.info #member_birth select:first-child {
+    margin-left: 0px;
+}
+
+
+button#sign {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(255, 208, 55);
+    border: 1px solid rgb(249, 205, 60);
+    border-radius: 0.25rem;
+    color: #f8f8f8;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 16px;
+    transition: 0.1s;
+}
+
+button#sign:active {
+    background-color: rgb(255, 222, 114);
+    color: #ccc;
+}
+
+.info {
+    margin-bottom: 13px;
+}
+
+/* ------------- 주소 ---------------- */
+
+.addr{
+    margin-bottom: 30px;
+}
+
+.info #member_addr {
+    margin-bottom: 40px;
+}
+
+.addr input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #d9d6d6;
+    border-radius: 0.25rem;
+    color: #383838;
+    font-weight: 400;
+    padding: 5px 15px;
+    margin-bottom: 5px;
+}
+
+.addr-search {
+    display: flex;
+}
+
+.addr-search input[type="button"] {
+    width: 150px;
+    height: 40px;
+    margin-left: 10px;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.addr-search input[type="button"]:active {
+    background-color: #ffffff;
+    color: black;
+}
+
+/*    interest   */
+.info {
+    position: relative;
+}
+
+.nameTag {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.nameTag#nameTag_interest {
+    position: absolute;
+    top: -25px;
+    left: -27px;
+    margin-bottom: 5px;
+}
+
+.interest {
+    /* 필요한 스타일들... */
+    position: relative; /* 위치 설정을 위해 상대 위치 지정 */
+    /*z-index: 1; /* 다른 요소들보다 위에 표시될 수 있도록 z-index 설정 */
+}
+
+.info#member_interest{
+    width: 100%;
+    height: 70px;
+    border: 1px solid #d9d6d6;
+    border-radius: 0.25rem;
+    color: #383838;
+    font-weight: 400;
+    padding: 5px 15px;
+    margin-bottom: 5px;
+    line-height: 30px;
+    display: felx;
+    justfy-content: space-between;
+}
+
+.info label {
+    margin: 0 25px;
+    font-size: 14px;
+}
+
+[type="radio"]:hover {
+  cursor: pointer;
+}
+
+
+/* error-msg */
+.info {
+    position: relative;
+    /* 기타 스타일 */
+}
+
+.info .error-msg {
+    position: absolute;
+    font-size: 11px;
+    font-weight: 600;
+    color: red;
+
+}
+
+#member_email .error-msg {
+    margin-top: -7px;
+}
+
+.result {
+    font-size: 11px;
+    font-weight: 600;
+    color: red;
+    margin: 0 0 0 10px;
+}
+
+
+/* select box */
+select.box{
+    width: 100%;
+    height: 43px;
+    box-sizing: border-box;
+    margin-left: 5px;
+    padding: 5px 0 5px 10px;
+    border-radius: 0.25rem;
+    border: 1px solid #d9d6d6;
+    color: #383838;
+    background-color: #fff;
+}
+
+option {
+    font-size: 16px;
+}
+
+/* 실패시 */
+#result-fail {
+    width: 100%;
+    height: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: red;
+    font-size: 13px;
+}
+
+.exist {
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.exist a{
+    margin-left: 3px;
+    text-decoration: none;
+    font-weight: 700;
+    color: #585858;
+    transition: 0.1s;
+}
+
+.exist a:hover {
+    text-decoration: none;
+    color: #9e9e9e;
+}
+
